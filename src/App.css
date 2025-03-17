@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* General Styles */
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+}
+
+h2, h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.wrap-text {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.main-menu-button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  margin: 0 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.main-menu-button:hover {
+  background-color: #0056b3;
+}
+
+.common-button {
+  padding: 8px 16px; /* Increase padding for larger buttons */
+  font-size: 1rem; /* Increase font size */
+  margin: 0 8px; /* Add margin for spacing between buttons */
+  background-color: grey; /* Set background color to grey */
+  color: white; /* Set text color to white */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.fixed-image {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 150px; /* Adjust size if needed */
+  height: auto;
+  z-index: -1;
+}
+
+.final-scores-table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+.final-scores-table th,
+.final-scores-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.final-scores-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.final-scores-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.final-scores-table tr:nth-child(1) {
+  background-color: #d4edda; /* Soft green for the highest score */
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card .card-score {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card .card-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.card .card-criteria {
+  margin-top: 10px;
+}
+
+.card .card-criteria-item {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.text-left p {
+  line-height: 1.4; /* Reduce line spacing */
+  font-size: 0.95rem; /* Slightly smaller font size */
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.shadow-sm {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mt-4 {
+  margin-top: 1rem; /* Reduce top margin */
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem; /* Reduce bottom margin */
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem; /* Reduce bottom margin for headings */
+}
+
+.p-3 {
+  padding: 1rem; /* Reduce padding */
+}
+
+/* Header Section */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #4f93ff, #1c64d1); /* Lighter blue gradient */
+}
+
+.text-white {
+  color: white !important; /* Ensure it overrides any other styles */
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.drop-shadow-md {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for better contrast */
+}
+
+/* Buttons */
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: #0056b3;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Cards */
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.md\:grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.text-gray-600 {
+  color: #718096;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+/* Logo Positioning */
+.fixed {
+  position: fixed;
+}
+
+.static {
+  position: static;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.left-1-2 {
+  left: 50%;
+}
+
+.transform {
+  transform: translateX(-50%);
+}
+
+.w-20 {
+  width: 10rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+/* Flexbox for Centering Logos */
+.items-center {
+  align-items: center;
+}
+
+/* Positioning for Logos */
+.left-1-2 {
+  left: 50%;
+}
+
+/* Logo Size */
+.w-24 {
+  width: 6rem; /* Slightly larger logos */
+}
+
+/* Transparent Inputs with Underline */
+input {
+  background: transparent;
+  border: none;  
+  text-align: center;
+  width: 100%;
+  outline: none; /* Remove focus outline */
+  transition: border-color 0.3s ease; /* Smooth transition for hover/focus */
+}
+
+input:focus {
+  border-bottom: 1px solid blue; /* Highlight underline on focus */
+}
