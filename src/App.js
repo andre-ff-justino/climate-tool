@@ -8,7 +8,18 @@ import logoCpC from "C:/Users/User/Documents/climate-tool/src/CpC-logo.png";
 
 function App() {
   const [screen, setScreen] = useState(null);
-  const [criteria, setCriteria] = useState([]);
+  const [criteria, setCriteria] = useState([
+    "Maturidade Tecnológica (TRL)",
+    "CAPEX",
+    "O&M",
+    "Custo Marginal de Abatimento de CO2",
+    "Criação de Emprego",
+    "Bem-estar",
+    "Coesão social",
+    "Educação ambiental",
+    "Regulação climática",
+    "Qualidade do ar"
+  ]);
   const [solutions, setSolutions] = useState([]);
   const [currentStep, setCurrentStep] = useState(0);
   const [comparisons, setComparisons] = useState({});
@@ -66,47 +77,15 @@ function App() {
   ];
 
   useEffect(() => {
-    // Load the CSV file
-    fetch("/criteria_scores.csv")
-      .then((response) => response.text())
-      .then((csvText) => {
-        const data = parseCSV(csvText);
-
-        // Extract criteria from the header row
-        const criteriaHeaders = Object.keys(data[0]).slice(2); // Skip "Tipo criterio" and "Estratégia"
-        setCriteria(criteriaHeaders);
-
-        // Extract solutions and their scores
-        const solutionsData = data.map((row) => ({
-          name: row["Estratégia"],
-          scores: criteriaHeaders.map((criterion) => parseInt(row[criterion], 10)),
-        }));
-        setSolutions(solutionsData);
-      })
-      .catch((error) => {
-        console.error("Failed to load CSV, using default solutions:", error);
-        setSolutions(defaultSolutions); // Use hardcoded default solutions as fallback
-      });
-  }, []);
+    // Initialize solutions with default solutions
+    setSolutions(defaultSolutions);
+  }, []); // Empty dependency array to run only once
 
   useEffect(() => {
     const totalWidth = 1000; // Total width for the table
     const numColumns = criteria.length + 1; // Number of columns (criteria + solution column)
     setColumnWidth(totalWidth / numColumns);
   }, [criteria.length]);
-
-  const parseCSV = (csvText) => {
-    const rows = csvText.split("\n").map((row) => row.trim());
-    const headers = rows[0].split(",").map((header) => header.trim());
-    const data = rows.slice(1).map((row) => {
-      const values = row.split(",").map((value) => value.trim());
-      return headers.reduce((acc, header, index) => {
-        acc[header] = values[index];
-        return acc;
-      }, {});
-    });
-    return data;
-  };
 
   const resetToDefault = () => {
     setSolutions([...defaultSolutions]);
