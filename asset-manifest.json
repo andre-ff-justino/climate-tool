@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/climate-tool/static/css/main.bb6f4aa5.css",
-    "main.js": "/climate-tool/static/js/main.f3f8b3dd.js",
+    "main.js": "/climate-tool/static/js/main.eb27729a.js",
     "static/media/CpC-logo.png": "/climate-tool/static/media/CpC-logo.2a455fb79c82efcc9d27.png",
     "static/media/logo-in-mais.png": "/climate-tool/static/media/logo-in-mais.90283476b1ebe5135c4c.png",
     "index.html": "/climate-tool/index.html",
     "main.bb6f4aa5.css.map": "/climate-tool/static/css/main.bb6f4aa5.css.map",
-    "main.f3f8b3dd.js.map": "/climate-tool/static/js/main.f3f8b3dd.js.map"
+    "main.eb27729a.js.map": "/climate-tool/static/js/main.eb27729a.js.map"
   },
   "entrypoints": [
     "static/css/main.bb6f4aa5.css",
-    "static/js/main.f3f8b3dd.js"
+    "static/js/main.eb27729a.js"
   ]
 }
