@@ -1,12 +1,20 @@
-Tipo criterio,Estratégia,Maturidade Tecnológica (TRL),CAPEX,O&M,Custo Marginal de Abatimento de CO2,Criação de Emprego,Bem-estar,Coesão social,Educação ambiental,Regulação climática,Qualidade do ar
-Tecno-economico,Parques urbanos,5,4,3,5,3,5,5,5,5,4
-Tecno-economico,Árvores de arruamento,5,3,3,4,3,4,4,4,3,3
-Tecno-economico,Hortas Urbanas,5,4,5,4,0,5,5,5,3,2
-Tecno-economico,Telhados e paredes verdes,4,3,3,4,4,3,3,4,4,2
-Tecno-economico,Florestas geridas,5,4,4,5,1,3,2,2,3,3
-Tecno-economico,Sistemas agroflorestais,5,4,4,5,2,4,3,3,4,4
-Tecno-economico,Restauro de zonas húmidas,4,4,4,5,2,4,3,3,5,4
-Tecno-economico,Biomateriais,4,3,3,3,3,2,2,2,2,2
-Tecno-economico,Biocarvão,3,3,3,3,3,3,2,2,3,2
-Tecno-economico,Captura direta no ar,2,1,2,1,4,2,1,2,1,4
-Tecno-economico,BECCS,2,1,2,3,5,2,1,2,1,4
+Tipo criterio,Estratégia,Maturidade Tecnológica (TRL),CAPEX,Custo Marginal de Abatimento de CO2,Criação de Emprego,Bem-estar,Coesão social,Educação ambiental,Regulação climática,Qualidade do ar,Contribuição para a biodiversidade,Melhoria da qualidade da água/capacidade de retenção de água,Melhoria da fertilidade/qualidade do solo
+Tecno-economico,Parques urbanos,5,2,5,4,5,5,5,5,4,4,3,3
+Tecno-economico,Árvores de arruamento,5,1,4,4,4,4,4,3,3,3,3,2
+Tecno-economico,Hortas Urbanas,5,1,4,2,5,5,5,3,2,3,3,4
+Tecno-economico,Telhados e paredes verdes,4,1,4,4,3,3,4,4,2,3,3,2
+Tecno-economico,Florestas mediterrânicas,5,5,5,2,3,2,2,3,3,3,3,3
+Tecno-economico,Florestas monocultura,5,5,5,2,3,2,2,3,3,3,3,3
+Tecno-economico,Sistemas agroflorestais,5,5,5,3,4,3,3,4,4,4,4,5
+Tecno-economico,Restauro de zonas húmidas,4,4,5,3,4,3,3,5,4,5,5,4
+Tecno-economico,Biomateriais,4,3,3,4,2,2,2,2,2,3,3,4
+Tecno-economico,Biocarvão,3,3,3,3,3,2,2,3,2,2,2,2
+Tecno-economico,Captura direta no ar,2,2,1,4,2,1,2,1,4,1,1,1
+Tecno-economico,BECCS,2,2,2,5,2,1,2,1,4,1,1,1
+Escala,Maturidade Tecnológica (TRL),CAPEX (€/tCO2),Custo Marginal de Abatimento de CO2 (€/CO2),Criação de Emprego (FTE/tCO2),Bem-estar,Coesão social,Educação ambiental,Regulação climática,Qualidade do ar,Contribuição para a biodiversidade,Melhoria da qualidade da água/capacidade de retenção de água,Melhoria da fertilidade/qualidade do solo
+Nivel 5,TRL 11,0-25€/tCO2,0-50€/tCO2,>1 FTE / tCO2,Muito Alto,Muito Alto,Muito Alto,Muito Alto,Muito Alto,Muito Alto,Muito Alto,Muito Alto
+Nivel 4,TRL 9-10,25-50€/tCO2,50-100€/tCO2,0,1-1 FTE / tCO2,Alto,Alto,Alto,Alto,Alto,Alto,Alto,Alto
+Nivel 3,TRL 7-8,50-100€/tCO2,100-250€/tCO2,0,01-0,1 FTE / tCO2,Moderado,Moderado,Moderado,Moderado,Moderado,Moderado,Moderado,Moderado
+Nivel 2,TRL 5-6,100-500€/tCO2,250-500€/tCO2,0,001-0,01 FTE / tCO2,Baixo ou Nulo,Baixo ou Nulo,Baixo ou Nulo,Baixo ou Nulo,Baixo ou Nulo,Baixo ou Nulo,Baixo ou Nulo,Baixo ou Nulo
+Nivel 1,TRL 1-4,>500€/tCO2,>500€/tCO2,<0,001 FTE / tCO2,Negativo,Negativo,Negativo,Negativo,Negativo,Negativo,Negativo,Negativo
+Explicação,"O que é: Nível de prontidão tecnológica, indicando quão desenvolvida ou pronta para aplicação está uma solução. Métrica: Normalmente classificada numa escala de 1–9 (ou 1–11), em que valores mais altos significam maior maturidade.","O que é: Investimento inicial para implementar a solução, distribuído pelo CO₂ removido/evitado. Métrica: Euros por tonelada de CO₂.","O que é: Custo total, inicial e manutenção, do projeto para sequestrar cada tonelada de CO₂. Métrica: Euros por tonelada de CO₂.","O que é: O impacto na geração de postos de trabalho, tendo em conta a quantidade de CO₂ reduzido/remoção. Métrica: FTE (Full-Time Equivalent) por tonelada de CO₂ ou indicador qualitativo se não existirem dados.","O que é: Melhoria do bem-estar local/comunitário (p. ex.: benefícios para a saúde mental, espaços de lazer).","O que é: Contributo para a inclusão social, interação comunitária e fortalecimento do sentido de pertença.","O que é: Potencial para promover conhecimentos e consciencialização ambiental.","O que é: Benefícios adicionais na regulação local ou regional do clima (p. ex.: arrefecimento urbano).","O que é: Melhorias na qualidade do ar, como redução de poluentes e partículas.","O que é: Capacidade de proteger ou aumentar a diversidade de espécies e habitats.","O que é: Impacto na qualidade da água, retenção hídrica e mitigação de cheias.","O que é: Efeitos na saúde e fertilidade do solo (p. ex.: teor de matéria orgânica, nutrientes)."
